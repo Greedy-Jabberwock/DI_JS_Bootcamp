@@ -1,0 +1,72 @@
+main {
+    text-align: center;
+}
+
+nav {
+    background-color: aqua;
+    text-align: left;
+    position: relative;
+    height: auto;
+}
+
+nav > div {
+    display: inline-block;
+    float: right;
+    right: 40px;
+    margin: 30px 60px;
+    padding: 8px 40px;
+    font-size: 28px;
+}
+
+div > span {
+    padding: 0px 40px;
+}
+
+#label > img {
+    height: 60px;
+    margin: 25px;
+}
+
+#menu {
+    background-color: whitesmoke;
+}
+
+footer {
+    background-color: aqua;
+    font-size: 14px;
+    padding: 15px 0px;
+}
+
+@media screen
+and (min-width: 480px)
+and (max-width: 600px) {
+    nav > div {
+        margin: 30px 10px;
+        padding: 8px 40px;
+        font-size: 16px;
+    }
+
+    div > span {
+        padding: 0px 15px;
+    }
+}
+
+@media screen
+and (min-width: 600px)
+and (max-width: 768px) {
+    nav > div {
+        margin: 30px 8px;
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen
+and (min-width: 768px)
+and (max-width: 992px) {
+    nav > div {
+        margin: 30px 9px;
+        padding: 8px 40px;
+        font-size: 23px;
+    }
+}
