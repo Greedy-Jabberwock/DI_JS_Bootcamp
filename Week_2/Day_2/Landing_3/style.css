@@ -1,0 +1,201 @@
+body {
+    text-transform: capitalize;
+    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* NAVIGATION */
+
+nav {
+    height: 10vh;
+    padding: 0px 3vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: cadetblue;
+    font-size: 3vh;
+}
+
+.logo {
+    font-size: 5vh;
+}
+
+button {
+    background-color: transparent;
+    border: 3px solid darkcyan;
+    padding: 0 2vh;
+    color: cadetblue;
+    border-radius: 4px;
+    font-size: 3vh;
+    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.no-decor {
+    text-transform: none;
+    text-decoration: none;
+}
+
+.no-bold {
+    font-weight: normal;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-ul > li {
+    padding: 0 3vh;
+}
+
+.nav-ul.end {
+    margin-left: auto;
+}
+
+/* GRID */
+main {
+    background-color: #8080801a;
+    padding: 5vh 40vh;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 22vh auto;
+    gap: 4vh;
+}
+
+select {
+    border-radius: 4px;
+    padding: .6vh 1.3vh;
+    margin: 0 .5vh;
+}
+
+i {
+    font-size: 1.4em;
+}
+
+.header {
+    grid-column: span 3;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.header > p {
+    font-size: 3vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* CARD */
+
+.card {
+    text-align: center;
+}
+
+.popular {
+    background-color: cadetblue;
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+    padding: 1vh 0;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: whitesmoke
+}
+
+.popular.hidden {
+    visibility: hidden;
+}
+
+.price-section {
+    background-color: white;
+    height: 34vh;
+    padding: 4vh 0;
+}
+
+.price-section > i {
+    font-size: 10vh;
+    margin-bottom: 0.3em;
+}
+
+.name {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 4vh;
+}
+
+.description {
+    font-style: italic;
+    margin: 0 0 0.3em 0;
+}
+
+.price-section > button {
+    border: none;
+    border-radius: 4px;
+    background-color: #7fcb4d;
+    padding: 1.2vh 1.2vh;
+    font-size: 2vh;
+    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Work Sans', sans-serif;
+    color: #4848c1;
+}
+
+.price {
+    font-size: 4vh;
+    margin: 0;
+    padding: 2vh;
+    color: #808080;
+}
+
+.sup {
+    vertical-align: sub;
+    font-size: 3vh;
+}
+
+.nocredit {
+    margin: 1vh ;
+}
+
+.features {
+    color: white;
+    background-color: #4848c1;
+    height: 70vh;
+    padding-bottom: 10vh;
+    align-self: flex-start;
+    border-radius: 4px;
+}
+
+.feature-list {
+    text-align: start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+li {
+    padding: 0.4vh 0;
+}
+
+hr {
+    color: #808080;
+    margin: 2vh 5vh 0 5vh;
+    border-color: #808080;
+}
+
+.table-head {
+    font-weight: bold;
+}
+
+.special {
+    padding-right: 2vh;
+}
