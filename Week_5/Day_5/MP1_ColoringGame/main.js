@@ -7,7 +7,6 @@ let cells = document.querySelectorAll('#cells > div');
 colorBoxes.forEach(item => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
-        // console.log(item);
         pickedStyle = item.getAttribute('style');
     });
 });
