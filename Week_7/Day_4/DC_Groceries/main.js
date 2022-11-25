@@ -18,12 +18,12 @@ displayGroceries();
 let cloneGroceries = () => {
     let user = client;
     console.log(user);
-    client = 'Betty';
-    console.log(user); 
+    user = 'Betty';
+    console.log(user); // They changed because user just get a value of client variable, not a reference.
 
     let shopping = groceries;
     console.log(shopping);
-    groceries.totalPrice = '35$'; // Changes because it's one object, shopping have a lint to adress where the groceries object is saved;
+    groceries.totalPrice = '35$'; // Changes because it's one object, shopping and groceries have same reference to object.
     groceries.other.payed = false; // Here we change another object, link to which saved in payed variable;
     console.log(shopping);
 }
