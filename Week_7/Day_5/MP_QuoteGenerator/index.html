@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="qoute-field">
+        <button id="generate-button" onclick="generateQuote()">Generate Quote</button>
+        <div id="quote-container">
+            <p id="quote"></p>
+            <p id="author"></p>
+        </div>
+    </div>
+    <div id="form-container">
+        <form name="addQuoteForm">
+            <label for="new_author">Author: </label>
+            <input id="new_author" type="text" name="new_author">
+            <br>
+            <label for="new_quote">Quote: </label>
+            <textarea id="new_quote" name="new_quote"></textarea>
+            <br>
+            <input type="submit" value="Add new record">
+        </form>
+    </div>
+    <section>
+        <div>
+            <h2>My Quotes</h2>
+            <p>Motivational, Inspirational and more !</p>
+        </div>
+        <div>
+            <div>
+                <p id="foundedQuote"></p>
+                <p id="foundedAuthor"></p>
+            </div>
+        </div>
+        <div>
+            <form name="searchForm" id="search-form">
+                <input type="text" id="quotes-search" name="searchField" id="searchField">
+                <input type="submit" id="quotes-submit" value="Search">
+            </form>
+        </div>
+        <div id="nav-buttons">
+            <button id="prev-button" class="nav-button" onclick="showPreviousQuote()">Previous</button>
+            ----
+            <button id="next-button" class="nav-button" onclick="showNextQuote()">Next</button>
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>

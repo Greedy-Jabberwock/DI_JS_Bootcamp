@@ -1,0 +1,122 @@
+#qoute-field {
+    background-color: #a6d5d5;
+    border: 10px solid green;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+}
+
+#generate-button {
+    margin-top: 15px;
+    border: 5px solid grey;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#generate-button:hover {
+    background-color: #a6d5d5;
+}
+
+#quote-container {
+    padding-top: 30px;
+    margin: 0 10px;
+}
+
+#quote {
+    font-size: 25px;
+}
+
+#author {
+    padding-left: 80px;
+}
+
+#form-container {
+    margin: 40px;
+    width: 350px;
+    background-color: #a6d5d5;
+    border: 10px solid green;
+    text-align: center;
+}
+
+label, input {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/* ------------------------------------------- */
+
+section {
+    background-color: #252728;
+    color: white;
+    text-align: center;
+}
+
+section > div:first-child {
+    border-bottom: 1px solid #35383a;
+    padding-top: 10px;
+}
+
+section > div:nth-child(2) {
+    height: 80px;
+}
+
+#quotes-search {
+    width: 70%;
+    height: 24px;
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+#quotes-submit {
+    font-size: 17px;
+    width: 100px;
+    background: none;
+    color: green;
+    padding: 4px 0;
+    border-radius: 4px;
+    border: 3px solid green;
+}
+
+#quotes-submit:hover {
+    background-color: green;
+    color: white;
+}
+
+.nav-button {
+    font-size: 17px;
+    background: none;
+    padding: 3px;
+    width: 100px;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+#prev-button {
+    color: red;
+    border: 3px solid red;
+}
+
+#prev-button:hover {
+    background-color: red;
+    color: white;
+}
+
+#next-button {
+    color: blue;
+    border: 3px solid blue;
+}
+
+#next-button:hover {
+    background-color: blue;
+    color: white;
+}
+
+#foundedQuote {
+    font-size: 19px;
+    margin-bottom: 2px;
+    color:blanchedalmond
+}
+
+#foundedAuthor {
+    color:coral
+}
