@@ -1,13 +1,17 @@
-function getGifUrl(category) {
+const gif_form = document.forms.get_gif;
+const gifs_field = document.getElementById('gifs_field');
+
+let create_el = (tag) => document.createElement(tag);
+
+function getGif(e) {
+    e.preventDefault();
     let xhr = new XMLHttpRequest();
-    const URL = "api.giphy.com/v1/gifs/random";
-    const ADDITIONAL = `?api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My`;
-    xhr.open('GET', URL + ADDITIONAL, { mode: 'no-cors'});
-    console.log(URL+ADDITIONAL)
-    xhr.withCredentials = false;
-    xhr.setRequestHeader('Access-Control-Allow-Origin', "*");
-    xhr.setRequestHeader('Access-Control-Allow-Headers', "*");
-    xhr.setRequestHeader('Content-Type', 'application/json');
+    let category = gif_form.elements[0].value;
+    gif_form.elements[0].value = '';
+    const URL = "https://api.giphy.com/v1/gifs/random";
+    const ADDITIONAL = `?api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My&q=${category}&rating=g`;
+    
+    xhr.open('GET', URL + ADDITIONAL);
     xhr.send();
 
     xhr.onload = () => {
@@ -15,11 +19,35 @@ function getGifUrl(category) {
             console.log(`Error: ${xhr.status} ${xhr.statusText}`);
         } else {
             let JSON_responce = JSON.parse(xhr.response);
-            console.log(JSON_responce);
+            let url = JSON_responce.data.images.fixed_width.url;
+            let card = createGifCard(url);
+            document.getElementById('gifs_field').appendChild(card);
         }
     }
 
     xhr.onerror = () => console.log('Something goes wrong.' + xhr.status + ' ' + xhr.statusText);
 }
 
-getGifUrl('bold');
+
+function createGifCard (url) {
+    let container = create_el('div');
+    let img = create_el('img');
+    img.src = url;
+    let button = create_el('button');
+    button.innerHTML = 'Delete';
+    container.appendChild(img);
+    container.appendChild(button);
+    button.addEventListener('click', () => gifs_field.removeChild(container))
+    return container;
+}
+
+
+function deleteAll() {
+    while (gifs_field.children) {
+        gifs_field.removeChild(gifs_field.firstChild);
+    }
+}
+
+gif_form.addEventListener('submit', getGif);
+
+
