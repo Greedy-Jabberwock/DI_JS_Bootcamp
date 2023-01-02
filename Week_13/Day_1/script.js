@@ -1,0 +1,1 @@
+(() => console.log('Hello new student. Let\'s learn Node.js!'))();
