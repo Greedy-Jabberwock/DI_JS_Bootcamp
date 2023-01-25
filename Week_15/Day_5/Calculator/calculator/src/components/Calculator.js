@@ -44,7 +44,7 @@ class Calculator extends Component {
     render() {
         const style = {margin: '5px'}
         return (
-            <section>
+            <>
                 <form name='calc' onSubmit={this.handleOperation}>
                     <h4>{this.state.operation} operation</h4>
                     <input type="text" name='f_num' style={style}/>
@@ -60,7 +60,7 @@ class Calculator extends Component {
                     </div>
                 </form>
                 <div>{this.state.result}</div>
-            </section>
+            </>
         )
     }
 };
