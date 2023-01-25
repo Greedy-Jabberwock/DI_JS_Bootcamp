@@ -1,0 +1,22 @@
+form {
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+input {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+label {
+    font-size: 12px;
+    padding: 3px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+hr {
+    margin: 0;
+}
