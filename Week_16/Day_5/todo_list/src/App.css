@@ -1,0 +1,51 @@
+.AlignCenter {
+  text-align: center;
+}
+
+.Task {
+  margin: 0 25px;
+  font-size: 9px;
+  background-color: aliceblue;
+}
+
+.TaskText {
+  margin: 0;
+  padding: 2px 25px;
+  border: 0.1px solid#e0e0e0;
+}
+
+.TaskText:hover {
+  text-decoration: line-through;
+}
+
+.AddTask {
+  margin-top: 25px;
+  margin-left: 5px;
+  color: grey;
+  font-size: 8px;
+}
+
+body {
+  margin: 10px;
+  width: 70%;
+  margin-left: 15%;
+  background-color: rgb(233, 229, 229);
+}
+
+
+input {
+  margin-left: auto;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid grey;
+  background-color: rgb(233, 229, 229);
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid green;
+}
+
+h1 {
+  color: lightseagreen;
+}

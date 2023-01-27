@@ -1,10 +1,10 @@
-import Express from 'express';
+import express from 'express';
 import cors from 'cors';
 
-const app = Express();
+const app = express();
 
 app.use(cors())
-app.use(Express.json())
+app.use(express.json())
 
 app.listen(3001, 'localhost', () => {
     console.log('Server is running on http://localhost:3001');
