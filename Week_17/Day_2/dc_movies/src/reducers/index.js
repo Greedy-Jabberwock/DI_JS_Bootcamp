@@ -10,8 +10,6 @@ const initialState = {
 };
 
 export const reducer = (state=initialState, action={}) => {
-    console.log('State: ', state);
-    console.log('Action: ', action);
     if (action) {
         return { ...state, currentFilm: state.films[parseInt(action.payload)] };
     } 
