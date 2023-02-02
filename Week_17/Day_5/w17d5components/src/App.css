@@ -1,0 +1,18 @@
+.container {
+  margin: 5%;
+}
+
+.Card {
+  background-color: antiquewhite;
+  padding: 15px 35px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+span {
+  margin: 0 5px;
+}
+
+h1 {
+  padding-left: 45px;
+}
