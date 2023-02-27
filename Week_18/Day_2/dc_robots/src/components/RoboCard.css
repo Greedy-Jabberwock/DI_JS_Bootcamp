@@ -1,0 +1,11 @@
+.robocard {
+    font-size: 12px;
+    background-color: aquamarine;
+    margin: 5px ;
+    border-radius: 4px;
+    border: 1px solid green;
+}
+
+.robocard > div > p:first-child {
+    font-weight: bold;
+}

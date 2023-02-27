@@ -2,7 +2,6 @@ import { Card } from 'react-bootstrap';
 
 const EmojiCard = (props) => {
     const {icon, name, amount} = props.card;
-    console.log(props);
     return (
         <Card key={props.id} className='Card'>
             <Card.Header>
